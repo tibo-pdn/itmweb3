@@ -31,13 +31,6 @@ app.get('/', ((req, res) => {
     });
 }));
 
-app.get('/home', ((req, res) => {
-    res.status(200).send({
-        date: new Date(),
-        status: "Up"
-    });
-}));
-
 app.get('/nft', ((req, res) => {
     console.log(req.body.id);
     res.status(201).send({
