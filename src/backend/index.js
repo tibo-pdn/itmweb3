@@ -13,7 +13,7 @@ const helmet = require('helmet');
 const app = express();
 // const router = require('./routes')
 
-dotenv.config({ path: './config/.env' });
+dotenv.config({path: './config/.env'});
 
 const STARTON_API_KEY = process.env.STARTON_API_KEY;
 const HOST = process.env.HOST;
@@ -28,6 +28,27 @@ app.get('/', ((req, res) => {
     res.status(200).send({
         date: new Date(),
         status: "Up"
+    });
+}));
+
+app.get('/home', ((req, res) => {
+    res.status(200).send({
+        date: new Date(),
+        status: "Up"
+    });
+}));
+
+app.get('/nft', ((req, res) => {
+    console.log(req.body.id);
+    res.status(201).send({
+        status: "NFT Created"
+    });
+}));
+
+app.post('/nft', ((req, res) => {
+    console.log(req.body.id);
+    res.status(201).send({
+        status: "NFT Created"
     });
 }));
 
