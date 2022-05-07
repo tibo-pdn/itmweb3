@@ -18,6 +18,8 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
         <RouterLink to="/doc">Documentation</RouterLink>
+        <RouterLink to="/collection">Collection</RouterLink>
+        <RouterLink to="/company">company</RouterLink>
       </nav>
     </div>
   </header>
