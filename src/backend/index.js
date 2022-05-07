@@ -11,6 +11,10 @@ const https = require('https');
 const axios = require('axios');
 const helmet = require('helmet');
 const app = express();
+const collectionRouter = require('./routes/routes_collection');
+const companyRouter = require('./routes/routes_company');
+const NFTRouter = require('./routes/routes_nft');
+const userRouter = require('./routes/routes_user');
 // const router = require('./routes')
 
 dotenv.config({path: './config/.env'});
@@ -24,24 +28,15 @@ app.use(express.urlencoded({
     extended: true
 }));
 
+app.use(collectionRouter);
+app.use(companyRouter);
+app.use(NFTRouter);
+app.use(userRouter);
+
 app.get('/', ((req, res) => {
     res.status(200).send({
         date: new Date(),
         status: "Up"
-    });
-}));
-
-app.get('/nft', ((req, res) => {
-    console.log(req.body.id);
-    res.status(201).send({
-        status: "NFT Created"
-    });
-}));
-
-app.post('/nft', ((req, res) => {
-    console.log(req.body.id);
-    res.status(201).send({
-        status: "NFT Created"
     });
 }));
 
@@ -50,6 +45,6 @@ app.listen(PORT, HOST, (err) => {
         console.error(err);
         throw err;
     } else {
-        console.info(`Starton Hackaton Project API is listening on: ${HOST}:${PORT}`);
+        console.info(`\n----------\nStarton Hackaton Project API is listening on: ${HOST}:${PORT}\n----------\n`);
     }
 })
