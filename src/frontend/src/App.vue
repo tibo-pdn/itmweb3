@@ -9,10 +9,10 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 
 <template>
   <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+    <img alt="Vue logo" class="logo" src="assets/thumbnail_my_logo_itm.png" width="155" height="155" />
 
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
+      <HelloWorld msg="Your Item & your Itm" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
