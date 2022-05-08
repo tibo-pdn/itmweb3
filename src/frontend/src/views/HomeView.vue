@@ -15,11 +15,22 @@ import TheWelcome from '@/components/TheWelcome.vue'
     
     <div class="col-12 mt-3">
       <form action="http://127.0.0.1:8081/nft/nike" method="POST">
-        <label for="exampleFormControlTextarea1" class="form-label">Collect your Itm:</label>
+        <label for="exampleFormControlTextarea1" class="form-label">Collect your ITM:</label>
         <input class="form-control form-control-lg" type="text" placeholder="Wallet adress" aria-label=".form-control-lg example">
       </form>
     </div>
 
     </div>
+  
+    <div class="card" style="width: 18rem; position:absolute; right: 8%; border-radius: 10px;">
+  <div class="card-body text-center">
+  <img src="assets/form_pic.png" class="card-img-top" alt="..." style="width: 40%;">
+    <h5 class="card-title">For companies</h5>
+    <p class="card-text">You are a <strong>company</strong> and you want to <strong>create your own collection</strong> ? Click here !</p>
+    <a href="https://a9sr7iz5qls.typeform.com/to/i7JrdOjp" class="btn btn-primary stretched-link">Form</a>
+  </div>
+
+  </div>
     </div>
+
 </template>
