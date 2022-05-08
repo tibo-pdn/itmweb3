@@ -2,7 +2,7 @@ Source: https://prograide.com/pregunta/19405/comment-ajouter-de-la-couleur-au-fi
 
 # Bienvenue sur ITM !
 
-Tables of contents  
+Tables of contents
  1. [Problèmes](#problemes)
  2. [Solution](#solution)
  3. [Installation](#installation)
@@ -50,6 +50,31 @@ ont possédé. Enfin nos NFT étant des objets 3D ils pourront être implément�
 <div id='installation'/>
 
 ##  🔄 ⚙️ Installation ⚙️ 🔄
+
+Pour récupérer le code source, cliquez [ici](https://github.com/tibo-pdn/starton_hackaton) et [clonez le repo](https://docs.github.com/en/desktop/contributing-and-collaborating-using-github-desktop/adding-and-cloning-repositories/cloning-and-forking-repositories-from-github-desktop)
+
+### - Déploiement frontend
+
+Une fois le code téléchargé, il faut déployer le frontend. Pour se faire, ouvrez un nouvel invité de commande et faites les commandes suivantes :
+
+```
+$ cd src/frontend
+$ npm i
+$ npm run dev
+$ cd ..
+```
+
+### - Déploiement backend
+
+Maintenant, ouvrez un autre terminal, allez dans le dossier que vous venez de télécharger et déplacez-vous dans le dossier du backend et déployez-le :
+
+```
+$ cd backend
+$ npm i
+$ npm start
+```
+
+**Et voilà, votre application est déployée !**
 
 <div id='equipe'/>
 
