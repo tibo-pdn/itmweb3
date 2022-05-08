@@ -1,0 +1,8 @@
+{
+  "name": "Nike x ITM",
+  "description": "OpenSea Creatures are adorable aquatic beings primarily for demonstrating what can be done using the OpenSea platform. Adopt one today to try out all the OpenSea buying, selling, and bidding feature set.",
+  "image": "https://ipfs.io/ipfs/QmXmf6c6U526WRvw4Bbac7j579NphQ4zkogdgXnozkA8dk",
+  "external_link": "external-link-url",
+  "seller_fee_basis_points": 1000,
+  "fee_recipient": "0xd8D567dc55732D15446eDa27Fa859b9Ef1b9F3C8" 
+}
