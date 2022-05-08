@@ -33,7 +33,7 @@ apparence numérique deviens de plus en plus importante, pourtant on ne dépense
 
 <div id='solution'/>
 
-## Solution
+##  ✅ Solution ✅
 
 Permettre aux marques d'associer leurs produits physique à un NFT qui serais la représentation
 3d de l'item acheté. Ce NFT prouverait l'authenticité du produit et permettrais grâce à une API
@@ -42,11 +42,11 @@ on possédé. Enfin nos NFT étant des objet 3D ils pourronts êtres implémente
 
 <div id='installation'/>
 
-## Installation
+##  🔄 ⚙️ Installation ⚙️ 🔄
 
 <div id='equipe'/>
 
-## Équipe et commentaires
+## 👥 Équipe et commentaires 👥
 
 <div id='rendu'/>
 
