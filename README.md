@@ -2,11 +2,11 @@
 GitHub repository for the Starton Hackaton
 ## Problèmes
 
-<h3>1) </h3> Aujourd'hui les contres façon sont tellement bien faites que elles menacent le monde du luxe
+<h4>1) </h4> Aujourd'hui les contres façon sont tellement bien faites que elles menacent le monde du luxe
 et des sneakers. A moin d'acheter son ITEM directement chez une marque au retail, on ne peut jamais
 êtres sur que l'ITEM est réel.
 
-<h3>2) </h3> Un américain dépense 1 700$ par ans pour se vétir,
+<h4>2) </h4> Un américain dépense 1 700$ par ans pour se vétir,
 Un Italien + de 1 000 €
 Un français 668 €
 
