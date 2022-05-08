@@ -34,12 +34,10 @@ Pourtant ne dépense rien pour cette dernière.
 
 
 Tous les problèmes évoqués ci-dessus sont les conséquence d'un internet où :
- - l'unicité de la donnée est impossible (voir 1.). 
- - aucune données n'est définitive (voir 2).
- - 
-les utilisateurs ne
-possèdent pas leurs données, 
-ne sont pas permanente 
+l'immuabilité et la confiance ne sont pas possible.
+
+Or le Web 3 permet de résoudre ces deux problèmes. Ainsi notre projet utilise ce Web 3 pour résoudre des problèmes auquels nous sommes ou seront tous confronté un jour.
+
 <div id='solution'/>
 
 ##  ✅ Solution ✅
