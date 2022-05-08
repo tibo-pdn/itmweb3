@@ -1,4 +1,10 @@
-```diff - text in red + text in green ! text in orange # text in gray @@ text in purple (and bold)@@ ```
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
 
 Source: https://prograide.com/pregunta/19405/comment-ajouter-de-la-couleur-au-fichier-readmemd-de-github
 
@@ -6,7 +12,7 @@ Source: https://prograide.com/pregunta/19405/comment-ajouter-de-la-couleur-au-fi
 GitHub repository for the Starton Hackaton
 ## Problèmes
 
-<h4>- 1) </h4> Aujourd'hui les contres façon sont tellement bien faites que elles menacent le monde du luxe
+<h4>1) </h4> Aujourd'hui les contres façon sont tellement bien faites que elles menacent le monde du luxe
 et des sneakers. A moin d'acheter son ITEM directement chez une marque au retail, on ne peut jamais
 êtres sur que l'ITEM est réel.
 
