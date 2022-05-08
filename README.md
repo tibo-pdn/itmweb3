@@ -1,7 +1,6 @@
 Source: https://prograide.com/pregunta/19405/comment-ajouter-de-la-couleur-au-fichier-readmemd-de-github
 
 # Bienvenue sur ITM !
-GitHub repository for the Starton Hackaton
 
 Tables of contents  
  1. [Problèmes](#problemes)
@@ -14,13 +13,13 @@ Tables of contents
 <div id='problemes'/>
 
 ## ❗️ ⚠️ Problèmes ⚠️ ❗️
-<h4>1) </h4> Aujourd'hui les contres façon sont tellement bien faites que elles menacent le monde du luxe
-et des sneakers. A moin d'acheter son ITEM directement chez une marque au retail, on ne peut jamais
-êtres sur que l'ITEM est réel.
+<h4>1. </h4> Aujourd'hui les contres façon sont tellement bien faits qu'elles menacent le monde du luxe
+et des sneakers. À moins d'acheter son ITEM directement chez une marque au retail, on ne peut jamais
+être sûr que l'ITEM est réel
 
-<h4>2) </h4> Les sneakers ou autre vetement limitée se revende via des revendeurs.
-Comment avoir confiance en ces revendeur ? Ex : sur vinted il y à enormément d'arnaque
-ou des gens font croire que ils possèdent des items et ainsi vendent un bien que il ne possède
+<h4>2. </h4> Les sneakers ou autre vêtement limité se revendent via des revendeurs.
+Comment avoir confiance en ces revendeurs ? Ex : sur vinted il y a énormément d'arnaque
+où des gens font croire qu'ils possèdent des items et ainsi vendent un bien qu'il ne possède
 pas.
 
 <h4>3) </h4> Les collectionneurs ne peuvent pas retracer l'historique de leurs items.
@@ -42,10 +41,10 @@ ne sont pas permanente
 
 ##  ✅ Solution ✅
 
-Permettre aux marques d'associer leurs produits physique à un NFT qui serais la représentation
-3d de l'item acheté. Ce NFT prouverait l'authenticité du produit et permettrais grâce à une API
-de voir l'historique de l'items mais aussi des utilisateurs afin de savoir ce qu'ils possèdent ou
-on possédé. Enfin nos NFT étant des objet 3D ils pourronts êtres implémenter dans de nombreux jeux et metaverse.
+Permettre aux marques d'associer leurs produits physiques à un NFT qui serait la représentation
+3d de l'item acheté. Ce NFT prouverait l'authenticité du produit et permettrait grâce à une API
+de voir l'historique de l'item mais aussi des utilisateurs afin de savoir ce qu'ils possèdent ou
+ont possédé. Enfin nos NFT étant des objets 3D ils pourront être implémentés dans de nombreux jeux et métaverse.
 
 <div id='installation'/>
 
@@ -56,23 +55,23 @@ on possédé. Enfin nos NFT étant des objet 3D ils pourronts êtres implémente
 ## 👥 Équipe et commentaires 👥
 
 <h4>Soheil KHALIL</h4>
-Developpeur Front-End
+Développeur Front-End
 
 -----
 
 <h4>Mayeul KERGALL</h4>
-Developpeur Front-End
+Développeur Front-End
 
 -----
 
 <h4>Clément MIKULA</h4>
-Developpeur Back-End
+Développeur Back-End
 
 -----
 
 
 <h4>Tibo PENDINO</h4>
-Developpeur Back-End
+Développeur Back-End
 
 -----
 
