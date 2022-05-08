@@ -18,6 +18,7 @@ async function signMessage() {
 
 <template>
   <header>
+  <div class="col-12">
     <img alt="Vue logo" class="logo" src="assets/thumbnail_my_logo_itm.png" width="155" height="155" />
     <button @click="signMessage">Sign Message</button>
 
@@ -31,6 +32,7 @@ async function signMessage() {
         <RouterLink to="/collection">Collection</RouterLink>
         <RouterLink to="/company">company</RouterLink>
       </nav>
+    </div>
     </div>
   </header>
 
