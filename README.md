@@ -22,9 +22,9 @@ Comment avoir confiance en ces revendeurs ? Ex : sur vinted il y a énormément 
 où des gens font croire qu'ils possèdent des items et ainsi vendent un bien qu'il ne possède
 pas.
 
-<h4>3) </h4> Les collectionneurs ne peuvent pas retracer l'historique de leurs items.
+<h4>3.</h4> Les collectionneurs ne peuvent pas retracer l'historique de leurs items.
 
-<h4>4) </h4> Un américain dépense 1 700$ par ans pour se vétir,
+<h4>4. </h4> Un américain dépense 1 700$ par ans pour se vétir,
 Un Italien + de 1 000 €
 Un français 668 €
 En moyenne on passe environs 7h00 par jour sur internet. 
@@ -33,8 +33,11 @@ Pourtant ne dépense rien pour cette dernière.
 
 
 
-Tous les problèmes évoqués ci-dessus sont les conséquence d'un internet où l'unicité de la donnée
-est impossible. ou les utilisateurs ne
+Tous les problèmes évoqués ci-dessus sont les conséquence d'un internet où :
+ - l'unicité de la donnée est impossible (voir 1.). 
+ - aucune données n'est définitive (voir 2).
+ - 
+les utilisateurs ne
 possèdent pas leurs données, 
 ne sont pas permanente 
 <div id='solution'/>
