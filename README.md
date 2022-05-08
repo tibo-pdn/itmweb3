@@ -1,4 +1,4 @@
-# starton_hackaton
+# Bienvenue sur ITM !
 GitHub repository for the Starton Hackaton
 ## Problème
 
