@@ -5,6 +5,7 @@ const FormData = require('form-data');
 const { append } = require('express/lib/response');
 
 const app = express();
+const PWD = process.env.PWD;
 
 const starton = axios.create({
     baseURL: "https://api.starton.io/v2",
@@ -35,6 +36,10 @@ async function uploadMetadataOnIpfs(imgCid, nftName, nftDescription) {
         name: `${nftName}`,
         description: `${nftDescription}`,
         image: `ipfs://ipfs/${imgCid}`,
+        attributes: {
+            mainColor: 'white',
+            size: '42',
+        }
     };
     const ipfsMetadata = await starton.post("/pinning/content/json",
     {
@@ -69,20 +74,21 @@ async function runMint(to, path, filename, nftName, nftDescription, contractAddr
     return nft;
 }
 
-app.post('/nft/nike', async (req, res) => {
+
+app.get('/nft/nike', async (req, res) => {
     const to = '0xA76ed24122193CF53f81F6dBEbE2a1DfF8f9e901';
-    const path = './shoeswith.png';
-    const filename = "NIKE x ITM - AIR JORDAN 1";
+    const path = `${PWD}/assets/aj4.png`;
+    const filename = "NIKE x ITM - AIR JORDAN 4";
     const contractAddr = "0x10032AbaF77824b6EE710444076EFB1c946102ac";
     const walletAddr = "0xd8D567dc55732D15446eDa27Fa859b9Ef1b9F3C8";
-    const nftName = "NIKE x ITM - AIR JORDAN 1"
-    const nftDescription = "First pair of NIKE x ITM AIR JORDAN 1"
+    const nftName = "NIKE x ITM - AIR JORDAN 4"
+    const nftDescription = "Pair of NIKE x ITM AIR JORDAN 4"
     const network = 'polygon-mumbai'
 
 
     const ret = await runMint(to, path, filename, nftName, nftDescription, contractAddr, walletAddr, network);
     res.status(201).send({
-        status: "NIKE x ITM AIR Jordan 1 NFT Created"
+        status: "NIKE x ITM AIR Jordan 4 NFT Created"
     })
 })
 
