@@ -1,5 +1,7 @@
 Source: https://prograide.com/pregunta/19405/comment-ajouter-de-la-couleur-au-fichier-readmemd-de-github
 
+# Bienvenue sur ITM !
+GitHub repository for the Starton Hackaton
 
 Tables of contents  
  1. [Problèmes](#problemes)
@@ -11,9 +13,7 @@ Tables of contents
 *******
 <div id='problemes'/>
 
-# Bienvenue sur ITM !
-GitHub repository for the Starton Hackaton
-## Problèmes
+## ❗️ ⚠️ Problèmes ⚠️ ❗️
 <h4>1) </h4> Aujourd'hui les contres façon sont tellement bien faites que elles menacent le monde du luxe
 et des sneakers. A moin d'acheter son ITEM directement chez une marque au retail, on ne peut jamais
 êtres sur que l'ITEM est réel.
@@ -34,6 +34,11 @@ apparence numérique deviens de plus en plus importante, pourtant on ne dépense
 <div id='solution'/>
 
 ## Solution
+
+Permettre aux marques d'associer leurs produits physique à un NFT qui serais la représentation
+3d de l'item acheté. Ce NFT prouverait l'authenticité du produit et permettrais grâce à une API
+de voir l'historique de l'items mais aussi des utilisateurs afin de savoir ce qu'ils possèdent ou
+on possédé. Enfin nos NFT étant des objet 3D ils pourronts êtres implémenter dans de nombreux jeux et metaverse.
 
 <div id='installation'/>
 
