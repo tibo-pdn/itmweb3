@@ -17,29 +17,22 @@ async function signMessage() {
 </script>
 
 <template>
-  <header>
-  <div class="col-12">
+
+  <!-- <div class="col-12 d-flex justify-content-center align-items-center">
+  <div class="col-8 myContainer">
     <img alt="Vue logo" class="logo" src="assets/thumbnail_my_logo_itm.png" width="155" height="155" />
     <button @click="signMessage">Sign Message</button>
+    <button type="button" class="btn btn-success">claim NFT</button>
 
-    <div class="wrapper">
-      <HelloWorld msg="Your Item & your Itm" />
 
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-        <RouterLink to="/doc">Documentation</RouterLink>
-        <RouterLink to="/collection">Collection</RouterLink>
-        <RouterLink to="/company">company</RouterLink>
-      </nav>
     </div>
-    </div>
-  </header>
+    </div> -->
+ 
 
   <RouterView />
 </template>
 
-<style>
+<!-- <style>
 @import '@/assets/base.css';
 
 #app {
@@ -135,4 +128,4 @@ nav a:first-of-type {
     margin-top: 1rem;
   }
 }
-</style>
+</style> -->
