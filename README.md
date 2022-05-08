@@ -23,14 +23,21 @@ Comment avoir confiance en ces revendeur ? Ex : sur vinted il y à enormément d
 ou des gens font croire que ils possèdent des items et ainsi vendent un bien que il ne possède
 pas.
 
-<h4>3) </h4> Un américain dépense 1 700$ par ans pour se vétir,
+<h4>3) </h4> Les collectionneurs ne peuvent pas retracer l'historique de leurs items.
+
+<h4>4) </h4> Un américain dépense 1 700$ par ans pour se vétir,
 Un Italien + de 1 000 €
 Un français 668 €
-En moyenne on passe environs 7h00 par jour sur internet. Ca soulève donc le faîte que notre
-apparence numérique deviens de plus en plus importante, pourtant on ne dépense rien pour cette dernière.
+En moyenne on passe environs 7h00 par jour sur internet. 
+Donc notre apparence numérique est sur le point de devenir de plus en plus importante.
+Pourtant ne dépense rien pour cette dernière.
 
-<h4>4) </h4> Les collectionneurs ne peuvent pas retracer l'historique de leurs items.
 
+
+Tous les problèmes évoqués ci-dessus sont les conséquence d'un internet où l'unicité de la donnée
+est impossible. ou les utilisateurs ne
+possèdent pas leurs données, 
+ne sont pas permanente 
 <div id='solution'/>
 
 ##  ✅ Solution ✅
@@ -84,6 +91,7 @@ Responsable de la partie non technique
 
 <h4>Edouard FRANCOIS</h4>
 Responsable de la partie non technique
+-----
 
 <div id='rendu'/>
 
