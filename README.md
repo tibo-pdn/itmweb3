@@ -48,7 +48,26 @@ on possédé. Enfin nos NFT étant des objet 3D ils pourronts êtres implémente
 
 ## 👥 Équipe et commentaires 👥
 
-![](https://intra.epitech.eu/file/userprofil/commentview/soheil.khalil.jpg)
+<h4>Soheil KHALIL</h4>
+Developpeur Front-End
+
+<h4>Mayeul KERGALL</h4>
+Developpeur Front-End
+
+<h4>Clément MIKULA</h4>
+Developpeur Back-End
+
+<h4>Tibo PENDINO</h4>
+Developpeur Back-End
+
+<h4>Malek GATOUFI</h4>
+Responsable effets, animations et 3D
+
+<h4>Erwan CARIOU</h4>
+Responsable de la partie non technique
+
+<h4>Edouard FRANCOIS</h4>
+Responsable de la partie non technique
 
 <div id='rendu'/>
 
