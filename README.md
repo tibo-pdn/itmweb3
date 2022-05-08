@@ -22,7 +22,7 @@ ou des gens font croire que ils possèdent des items et ainsi vendent un bien qu
 pas.
 
 <h4>3) </h4> Un américain dépense 1 700$ par ans pour se vétir,
-Un Italien + de 1 000 €
+! Un Italien + de 1 000 €
 Un français 668 €
 En moyenne on passe environs 7h00 par jour sur internet. Ca soulève donc le faîte que notre
 apparence numérique deviens de plus en plus importante, pourtant on ne dépense rien pour cette dernière.
