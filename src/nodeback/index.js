@@ -75,7 +75,7 @@ async function runMint(to, path, filename, nftName, nftDescription, contractAddr
 }
 
 
-app.get('/nft/nike', async (req, res) => {
+app.post('/nft/nike', async (req, res) => {
     const to = '0xA76ed24122193CF53f81F6dBEbE2a1DfF8f9e901';
     const path = `${PWD}/assets/aj4.png`;
     const filename = "NIKE x ITM - AIR JORDAN 4";
