@@ -48,6 +48,8 @@ on possédé. Enfin nos NFT étant des objet 3D ils pourronts êtres implémente
 
 ## 👥 Équipe et commentaires 👥
 
+![](https://intra.epitech.eu/file/userprofil/commentview/soheil.khalil.jpg)
+
 <div id='rendu'/>
 
-## Rendu
+## 📂 Rendu 📂
