@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
+
+    <title>ITM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="src/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="src/assets/css/templatemo-eduwell-style.css">
+    <link rel="stylesheet" href="src/assets/css/owl.css">
+    <link rel="stylesheet" href="src/assets/css/lightbox.css">
+<!--
+
+TemplateMo 573 EduWell
+
+https://templatemo.com/tm-573-eduwell
+
+-->
+  </head>
+
+<body>
+
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav class="main-nav">
+                    <!-- ***** Logo Start ***** -->
+                    <a href="index.html" class="logo">
+                        <img src="src/assets/ITM_logos/ITM_police.png" alt="EduWell Template" height="150px">
+                    </a>
+                    <!-- ***** Logo End ***** -->
+                    <!-- ***** Menu Start ***** -->
+                    <ul class="nav">
+                        <li class="scroll-to-section"><a href="index.html">Home</a></li>
+                    </ul>        
+                    <a class='menu-trigger'>
+                        <span>Menu</span>
+                    </a>
+                    <!-- ***** Menu End ***** -->
+                </nav>
+            </div>
+        </div>
+    </div>
+</header>
+  <!-- ***** Header Area End ***** -->
+  <section class="contact-us" id="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+        </div>
+          <div class="col-lg-4" style="margin-top: 10%; margin-bottom: 20%;">
+            <form id="contact" action="" method="post" style="border: solid 2px;color: #dc8cdb;">
+              <div class="row">
+                <div class="col-lg-12" id="claim-nft">
+                  <div class="section-heading">
+                    <h4>Get Your<em> NFT</em></h4>
+                  </div>
+                </div>
+                <div class="col-lg-12">
+                  <fieldset>
+                      <div class="col-12 mt-3">
+                        <form action="http://127.0.0.1:8081/nft/nike" method="POST">
+                          <label for="exampleFormControlTextarea1" class="form-label">Collect your ITM:</label>
+                          <input class="form-control form-control-lg" type="text" placeholder="Wallet adress" aria-label=".form-control-lg example">
+                        </form>
+                      </div>
+                    <button type="submit" id="form-submit" class="main-gradient-button">claim</button>
+                  </fieldset>
+                </div>
+              </div>
+            </form>
+          </div>
+        <div class="col-lg-12">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <p class="copyright">Epitech Hackaton [Itm X Starton]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="src/vendor/jquery/jquery.min.js"></script>
+    <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="src/assets/js/isotope.min.js"></script>
+    <script src="src/assets/js/owl-carousel.js"></script>
+    <script src="src/assets/js/lightbox.js"></script>
+    <script src="src/assets/js/tabs.js"></script>
+    <script src="src/assets/js/video.js"></script>
+    <script src="src/assets/js/slick-slider.js"></script>
+    <script src="src/assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
+</html>
