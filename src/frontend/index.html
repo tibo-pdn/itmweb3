@@ -1,15 +1,251 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" href="/favicon.ico" />
-    
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Itm</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.js"></script>
 
-  </body>
+  <head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,200,300,400,500,600,700,800,900" rel="stylesheet"> -->
+
+    <title>ITM</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="src/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="src/assets/css/fontawesome.css">
+    <link rel="stylesheet" href="src/assets/css/templatemo-eduwell-style.css">
+    <link rel="stylesheet" href="src/assets/css/owl.css">
+    <link rel="stylesheet" href="src/assets/css/lightbox.css">
+<!--
+
+TemplateMo 573 EduWell
+
+https://templatemo.com/tm-573-eduwell
+
+-->
+  </head>
+
+<body>
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky">
+      <div class="container">
+          <div class="row">
+              <div class="col-12">
+                  <nav class="main-nav">
+                      <!-- ***** Logo Start ***** -->
+                      <a href="index.html" class="logo">
+                          <img src="src/assets/ITM_logos/ITM_police.png" alt="EduWell Template" height="150px">
+                      </a>
+                      <!-- ***** Logo End ***** -->
+                      <!-- ***** Menu Start ***** -->
+                      <ul class="nav">
+                          <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                          <li class="scroll-to-section"><a href="#services">Services</a></li>
+                          <li class="scroll-to-section"><a href="#claim-nft">Claim</a></li> <!-- Courses -->
+                          <li class="scroll-to-section"><a href="#create-nft">Create Nft</a></li> <!-- Testimonials-->
+                      </ul>        
+                      <a class='menu-trigger'>
+                          <span>Menu</span>
+                      </a>
+                      <!-- ***** Menu End ***** -->
+                  </nav>
+              </div>
+          </div>
+      </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+  <!-- ***** Main Banner Area Start ***** -->
+  <section class="main-banner" id="top">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center">
+          <div class="header-text">
+            <h2>A new way to enjoy your <em>ITM</em></h2>
+            <!-- <h6>Welcome to our school</h6> -->
+            <div class="main-button-gradient">
+              <div class="scroll-to-section"><a href="#contact-section">Get your NFT NOW</a></div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="right-image">
+            <img src="src/assets/ITM_logos/handtag_pink.png" alt="100px">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- ***** Main Banner Area End ***** -->
+
+  <section class="services" id="services">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="section-heading">
+            <h6>Our Services</h6>
+            <h4>Provided <em>Services</em></h4>
+          </div>
+        </div>
+        <div class="col-lg-12">
+          <div class="owl-service-item owl-carousel">
+
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="src/assets/ITM_logos/hangbag_orange.png" alt="">
+                </div>
+                <h4>Simplicity</h4>
+                <p>You can download and use this EduWell Template for your teaching and learning stuffs.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="src/assets/ITM_logos/hangbag_blue.png" alt="">
+                </div>
+                <h4>Ready Target</h4>
+                <p>In non nisi eget magna efficitur ultricies non quis sapien. Pellentesque tellus.</p>
+              </div>
+            </div>
+
+            <div class="item">
+              <div class="service-item">
+                <div class="icon">
+                  <img src="src/assets/ITM_logos/hangbag.png" alt="">
+                </div>
+                <h4>Simplicity</h4>
+                <p>Aenean bibendum consectetur ex eu porttitor. Pellentesque id ultrices metus.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="contact-us" id="contact-section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8">
+        </div>
+        <div class="col-lg-4">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              
+              <div class="col-lg-12" id="claim-nft">
+                <div class="section-heading">
+                  <h6>For Clients</h6>
+                  <h4>Get Your<em> NFT</em></h4>
+                <!-- <p></p> -->
+                </div>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+
+                    <div class="col-12 mt-3">
+                      <form action="http://127.0.0.1:8081/nft/nike" method="POST">
+                        <label for="exampleFormControlTextarea1" class="form-label">Collect your ITM:</label>
+                        <input class="form-control form-control-lg" type="text" placeholder="Wallet adress" aria-label=".form-control-lg example">
+                      </form>
+                    </div>
+
+                  <button type="submit" id="form-submit" class="main-gradient-button">claim</button>
+                </fieldset>
+              </div>
+
+              <div class="col-lg-12" id="create-nft">
+                <div class="section-heading">
+                  <h6>For entreprises</h6>
+                  <h4>Create Your<em> collection</em></h4>
+                  <p>If you are an entreprise and you want to launch a collection with assiciated nft click on the form below</p>
+                </div>
+              </div>
+
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="button" id="form-submit" class="main-gradient-button" onclick="location.href='https://a9sr7iz5qls.typeform.com/to/i7JrdOjp'">Create your collection NOW</button>
+                </fieldset>
+              </div>
+            </div>
+
+          </form>
+        </div>
+        <div class="col-lg-12">
+          <ul class="social-icons">
+            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+          </ul>
+        </div>
+        <div class="col-lg-12">
+          <p class="copyright">Epitech Hackaton [Itm X Starton]</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Scripts -->
+  <!-- Bootstrap core JavaScript -->
+    <script src="src/vendor/jquery/jquery.min.js"></script>
+    <script src="src/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <script src="src/assets/js/isotope.min.js"></script>
+    <script src="src/assets/js/owl-carousel.js"></script>
+    <script src="src/assets/js/lightbox.js"></script>
+    <script src="src/assets/js/tabs.js"></script>
+    <script src="src/assets/js/video.js"></script>
+    <script src="src/assets/js/slick-slider.js"></script>
+    <script src="src/assets/js/custom.js"></script>
+    <script>
+        //according to loftblog tut
+        $('.nav li:first').addClass('active');
+
+        var showSection = function showSection(section, isAnimate) {
+          var
+          direction = section.replace(/#/, ''),
+          reqSection = $('.section').filter('[data-section="' + direction + '"]'),
+          reqSectionPos = reqSection.offset().top - 0;
+
+          if (isAnimate) {
+            $('body, html').animate({
+              scrollTop: reqSectionPos },
+            800);
+          } else {
+            $('body, html').scrollTop(reqSectionPos);
+          }
+
+        };
+
+        var checkSection = function checkSection() {
+          $('.section').each(function () {
+            var
+            $this = $(this),
+            topEdge = $this.offset().top - 80,
+            bottomEdge = topEdge + $this.height(),
+            wScroll = $(window).scrollTop();
+            if (topEdge < wScroll && bottomEdge > wScroll) {
+              var
+              currentId = $this.data('section'),
+              reqLink = $('a').filter('[href*=\\#' + currentId + ']');
+              reqLink.closest('li').addClass('active').
+              siblings().removeClass('active');
+            }
+          });
+        };
+
+        $('.main-menu, .responsive-menu, .scroll-to-section').on('click', 'a', function (e) {
+          e.preventDefault();
+          showSection($(this).attr('href'), true);
+        });
+
+        $(window).scroll(function () {
+          checkSection();
+        });
+    </script>
+</body>
 </html>
