@@ -129,31 +129,46 @@ async function runMint(
   return nft;
 }
 
-app.post("/nft/nike", async (req, res) => {
-  const to = "0xA76ed24122193CF53f81F6dBEbE2a1DfF8f9e901";
-  const path = `${PWD}/assets/aj4.png`;
-  const filename = "NIKE x ITM - AIR JORDAN 1";
+app.post("/claim/nike/:nft_id", async (req, res) => {
+  const to = req.body.to_addr;
   const contractAddr = "0x10032AbaF77824b6EE710444076EFB1c946102ac";
   const walletAddr = "0xd8D567dc55732D15446eDa27Fa859b9Ef1b9F3C8";
-  const nftName = "NIKE x ITM - AIR JORDAN 1";
-  const nftDescription = "Pair of NIKE x ITM AIR JORDAN 1";
   const network = "polygon-mumbai";
   const videoCid = "ipfs://ipfs/QmZcvr8eG2SQ9cCzGjhgFb2ZRR15S36QguevPkY9s7tSpZ";
+  let path;
+  let filename;
+  let nftName;
+  let nftDescription;  
 
-  const ret = await runMint(
-    to,
-    path,
-    filename,
-    nftName,
-    nftDescription,
-    contractAddr,
-    walletAddr,
-    network,
-    videoCid
-  );
+  if (req.params.nft_id == '1') {
+    path = `${PWD}/assets/aj1.png`;
+    filename = "NIKE x ITM - AIR JORDAN 1";
+    nftName = "NIKE x ITM - AIR JORDAN 1"
+    nftDescription = "Pair of NIKE x ITM AIR JORDAN 1"
+  } else if (req.params.nft_id == '2') {
+    path = `${PWD}/assets/aj4.png`;
+    filename = "NIKE x ITM - AIR JORDAN 4";
+    nftName = "NIKE x ITM - AIR JORDAN 4"
+    nftDescription = "Pair of NIKE x ITM AIR JORDAN 4"
+  } else if (req.params.nft_id == '3') {
+    path = `${PWD}/assets/balenciaga.png`;
+    filename = "NIKE x ITM - BALENCIAGA";
+    nftName = "NIKE x ITM - BALENCIAGA";
+    nftDescription = "Pair of NIKE x ITM BALENCIAGA";
+  } else if (req.params.nft_id == '4') {
+    path = `${PWD}/assets/converse.png`;
+    filename = "NIKE x ITM - CONVERSE";
+    nftName = "NIKE x ITM - CONVERSE";
+    nftDescription = "Pair of NIKE x ITM CONVERSE";
+  }
+
+  const ret = await runMint(to, path, filename, nftName, nftDescription, contractAddr, walletAddr, network, videoCid);
   res.status(201).send({
-    status: "NIKE x ITM AIR Jordan 4 NFT Created",
+    status: "OK",
+    description: "NFT Created",
+    nft: ret
   });
+  console.log(req.url);
 });
 
 app.listen("8081", "127.0.0.1", (req, res) => {
