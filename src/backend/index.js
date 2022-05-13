@@ -145,44 +145,45 @@ app.post("/api/claim/nike/:nft_id", async (req, res) => {
   //   return;
   // }
 
-  const to = req.body.to_addr;
-  const contractAddr = "0x10032AbaF77824b6EE710444076EFB1c946102ac";
-  const walletAddr = "0xd8D567dc55732D15446eDa27Fa859b9Ef1b9F3C8";
-  const network = "polygon-mumbai";
-  const videoCid = "ipfs://ipfs/QmZcvr8eG2SQ9cCzGjhgFb2ZRR15S36QguevPkY9s7tSpZ";
-  let path;
-  let filename;
-  let nftName;
-  let nftDescription;  
+  console.log("toto");
+  // const to = req.body.to_addr;
+  // const contractAddr = "0x10032AbaF77824b6EE710444076EFB1c946102ac";
+  // const walletAddr = "0xd8D567dc55732D15446eDa27Fa859b9Ef1b9F3C8";
+  // const network = "polygon-mumbai";
+  // const videoCid = "ipfs://ipfs/QmZcvr8eG2SQ9cCzGjhgFb2ZRR15S36QguevPkY9s7tSpZ";
+  // let path;
+  // let filename;
+  // let nftName;
+  // let nftDescription;  
 
-  console.log(req.body.to_addr);
-  if (req.params.nft_id == '1') {
-    path = `${PWD}/assets/aj1.png`;
-    filename = "NIKE x ITM - AIR JORDAN 1";
-    nftName = "NIKE x ITM - AIR JORDAN 1"
-    nftDescription = "Pair of NIKE x ITM AIR JORDAN 1"
-  } else if (req.params.nft_id == '2') {
-    path = `${PWD}/assets/aj4.png`;
-    filename = "NIKE x ITM - AIR JORDAN 4";
-    nftName = "NIKE x ITM - AIR JORDAN 4"
-    nftDescription = "Pair of NIKE x ITM AIR JORDAN 4"
-  } else if (req.params.nft_id == '3') {
-    path = `${PWD}/assets/balenciaga.png`;
-    filename = "NIKE x ITM - BALENCIAGA";
-    nftName = "NIKE x ITM - BALENCIAGA";
-    nftDescription = "Pair of NIKE x ITM BALENCIAGA";
-  } else if (req.params.nft_id == '4') {
-    path = `${PWD}/assets/converse.png`;
-    filename = "NIKE x ITM - CONVERSE";
-    nftName = "NIKE x ITM - CONVERSE";
-    nftDescription = "Pair of NIKE x ITM CONVERSE";
-  }
+  // console.log(req.body.to_addr);
+  // if (req.params.nft_id == '1') {
+  //   path = `${PWD}/assets/aj1.png`;
+  //   filename = "NIKE x ITM - AIR JORDAN 1";
+  //   nftName = "NIKE x ITM - AIR JORDAN 1"
+  //   nftDescription = "Pair of NIKE x ITM AIR JORDAN 1"
+  // } else if (req.params.nft_id == '2') {
+  //   path = `${PWD}/assets/aj4.png`;
+  //   filename = "NIKE x ITM - AIR JORDAN 4";
+  //   nftName = "NIKE x ITM - AIR JORDAN 4"
+  //   nftDescription = "Pair of NIKE x ITM AIR JORDAN 4"
+  // } else if (req.params.nft_id == '3') {
+  //   path = `${PWD}/assets/balenciaga.png`;
+  //   filename = "NIKE x ITM - BALENCIAGA";
+  //   nftName = "NIKE x ITM - BALENCIAGA";
+  //   nftDescription = "Pair of NIKE x ITM BALENCIAGA";
+  // } else if (req.params.nft_id == '4') {
+  //   path = `${PWD}/assets/converse.png`;
+  //   filename = "NIKE x ITM - CONVERSE";
+  //   nftName = "NIKE x ITM - CONVERSE";
+  //   nftDescription = "Pair of NIKE x ITM CONVERSE";
+  // }
 
-  const ret = await runMint(to, path, filename, nftName, nftDescription, contractAddr, walletAddr, network, videoCid);
+  // const ret = await runMint(to, path, filename, nftName, nftDescription, contractAddr, walletAddr, network, videoCid);
   res.status(201).send({
     status: "OK",
     description: "NFT Created",
-    nft_id: req.params.nft_id
+    // nft_id: req.params.nft_id
   });
 });
 
