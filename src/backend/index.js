@@ -1,11 +1,18 @@
 const fs = require("fs");
 const express = require("express");
 const axios = require("axios");
-const FormData = require("form-data");
-const { append } = require("express/lib/response");
+const formData = require("form-data");
 
 const app = express();
 const PWD = process.env.PWD;
+
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+
+app.use(express.json());
 
 const starton = axios.create({
   baseURL: "https://api.starton.io/v2",
@@ -20,7 +27,7 @@ function createImgBuffer(path) {
 
 // The image variable should be a buffer
 async function uploadImageOnIpfs(image, name) {
-  let data = new FormData();
+  let data = new formData();
   data.append("file", image, name);
   data.append("isSync", "true");
 
@@ -98,9 +105,9 @@ async function runMint(
   videoCid
 ) {
   const imgBuffer = createImgBuffer(path);
-  console.log(imgBuffer);
+  // console.log(imgBuffer);
   const ipfsImg = await uploadImageOnIpfs(imgBuffer, filename);
-  console.log(ipfsImg);
+  // console.log(ipfsImg);
   let ipfsMetadata;
   if (videoCid) {
     ipfsMetadata = await uploadMetadataOnIpfs(
@@ -117,7 +124,7 @@ async function runMint(
       false
     );
   }
-  console.log(ipfsMetadata);
+  // console.log(ipfsMetadata);
   const nft = await mintNft(
     to,
     ipfsMetadata.pinStatus.pin.cid,
@@ -125,11 +132,19 @@ async function runMint(
     walletAddr,
     network
   );
-  console.log(nft);
+  // console.log(nft);
   return nft;
 }
 
-app.post("/claim/nike/:nft_id", async (req, res) => {
+app.post("/api/claim/nike/:nft_id", async (req, res) => {
+
+  // if (!req.body.to_addr) {
+  //   res.status(400).send({
+  //     status: "Bad request"
+  //   });
+  //   return;
+  // }
+
   const to = req.body.to_addr;
   const contractAddr = "0x10032AbaF77824b6EE710444076EFB1c946102ac";
   const walletAddr = "0xd8D567dc55732D15446eDa27Fa859b9Ef1b9F3C8";
@@ -140,6 +155,7 @@ app.post("/claim/nike/:nft_id", async (req, res) => {
   let nftName;
   let nftDescription;  
 
+  console.log(req.body.to_addr);
   if (req.params.nft_id == '1') {
     path = `${PWD}/assets/aj1.png`;
     filename = "NIKE x ITM - AIR JORDAN 1";
@@ -166,9 +182,8 @@ app.post("/claim/nike/:nft_id", async (req, res) => {
   res.status(201).send({
     status: "OK",
     description: "NFT Created",
-    nft: ret
+    nft_id: req.params.nft_id
   });
-  console.log(req.url);
 });
 
 app.listen("8081", "127.0.0.1", (req, res) => {
