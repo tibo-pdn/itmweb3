@@ -72,13 +72,27 @@ https://templatemo.com/tm-573-eduwell
                 </div>
                 <div class="col-lg-12">
                   <fieldset>
-                      <div class="col-12 mt-3">
-                        <!-- <form action="http://127.0.0.1:8081/api/claim/nike/1" method="POST">TODO pour changer le chemin -->
-                          <label for="exampleFormControlTextarea1" class="form-label">Collect your ITM:</label>
-                          <input class="form-control form-control-lg" type="text" placeholder="Wallet adress" aria-label=".form-control-lg example">
-                        <!-- </form> -->
-                      </div>
-                      <input type="submit" id="form-submit" class="main-gradient-button" />
+                    <div class="col-12 mt-3">
+                      <script type="text/javascript">
+                        function sendElement() {
+                          const app = require( "express")
+                          let url = new XMLHttpRequest();
+                          url.open("POST", "http://127.0.0.1:8081/api/claim/nike/1");
+                          url.setRequestHeader("post", "no");
+
+                          url.onload = () =>
+                            console.log(url.responseText);
+                          const obj = document.querySelector("input[name='to_addr']").value;
+                          let data = {
+                            "to_addr": obj,
+                          };
+                          url.send(data);
+                        }
+                      </script>
+                      <label for="exampleFormControlTextarea1" class="form-label">Collect your ITM:</label>
+                      <input name="to_addr" class="form-control form-control-lg" type="text" placeholder="Wallet adress" aria-label=".form-control-lg example">
+                    </div>
+                    <input type="submit" onclick="sendElement()" id="form-submit" class="main-gradient-button"/>
                   </fieldset>
                 </div>
               </div>
